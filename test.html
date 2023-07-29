@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .image-item {
+            flex: 0 0 33.33%;
+            /* Adjust the percentage based on the number of images you want in a row */
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Optional: Adding a semi-transparent background color */
+            color: #fff;
+            /* Optional: Setting the caption text color */
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="images/action/action1.jpg" alt="Image 1">
+            <div class="image-caption">Caption for Image 1</div>
+        </div>
+        <div class="image-item">
+            <img src="images/action/action2.jpg" alt="Image 2">
+            <div class="image-caption">Caption for Image 2</div>
+        </div>
+        <!-- Add more image-item divs for additional images -->
+    </div>
+
+</body>
+
+</html>
